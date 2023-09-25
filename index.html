@@ -1,11 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ladies That UX Bilbao</title>
+    <title>LadiesTaskify</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">My Tasks</a></li>
+            <li><a href="#">Planning</a></li>
+            <li><a href="#">Music for Work</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Help Center</a></li>
+        </ul>
+    </aside>
     
+    <main class="main-content">
+        <div class="top-bar">
+            <!-- Contenido de la top bar -->
+            <h1>Dashboard</h1>
+
+            <input type="text" value="" placeholder="search" class="input-search">
+            <div class="notifications">Icon</div>
+            <div class="avatar">Img</div>
+        </div>
+        
+        <section class="content">
+            <!-- Contenido principal de la sección -->
+            <section class="tasks">
+                <!-- Contenido tasks -->
+                <h2>Tasks in progress</h2>
+                <ul class="tasks-list">
+                    <li class="task-folder featured">
+                        <a href="#">
+                            <div class="task">
+                                <small class="days-left alert">2 days left</small>
+                                <h3>Prepare the final presentation</h3>
+                            </div>
+                            <div class="project">
+                                <div class="project-info">
+                                    <div class="label">Project</div>
+                                    <div class="name">Yoga Rebranding</div>
+                                </div>
+                                <div class="project-picture">
+                                    Img
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="task-folder">
+                        <a href="#">
+                            <div class="task">
+                                <small class="days-left">4 days left</small>
+                                <h3>Discuss options for Mood Board</h3>
+                            </div>
+                            <div class="project">
+                                <div class="project-info">
+                                    <div class="label">Project</div>
+                                    <div class="name">Home Decor</div>
+                                </div>
+                                <div class="project-picture">
+                                    Img
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="task-folder">
+                        <a href="#">
+                            <div class="task">
+                                <small class="days-left">15 days left</small>
+                                <h3>Present the MVP 1 Demo to client</h3>
+                            </div>
+                            <div class="project">
+                                <div class="project-info">
+                                    <div class="label">Project</div>
+                                    <div class="name">Adopt a dog</div>
+                                </div>
+                                <div class="project-picture">
+                                    Img
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cta-wrapper">
+                    <a href="#">Add new task</a>
+                </div>
+            </section>
+            
+            <section class="planning">
+                <!-- Contenido principal de la sección -->
+                <h2>Planning</h2>
+                <div class="calendar">
+                    <div class="month">
+                        October 2023
+                        <div class="month-navigation">
+                            <a href="#">Previous</a>
+                            <a href="#">Next</a>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thr</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+                    <div class="daynumbers">
+                        <span class="inactive">25</span>
+                        <span class="inactive">26</span>
+                        <span class="inactive">27</span>
+                        <span class="inactive">28</span>
+                        <span class="inactive">29</span>
+                        <span class="inactive">30</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span>31</span>
+                        <span class="inactive">1</span>
+                        <span class="inactive">2</span>
+                        <span class="inactive">3</span>
+                        <span class="inactive">4</span>
+                        <span class="inactive">5</span>
+                    </div>
+                </div>
+                <div class="cta-wrapper">
+                    <a href="#">Add new reminder</a>
+                </div>
+            </section>
+            
+            <section class="music">
+                <!-- Contenido music -->
+                <h2>Music for work</h2>
+            </section>
+        </section>
+        
+        <section class="chat">
+            <!-- Contenido del chat -->
+            <h2>Team chat</h2>
+        </section>
+    </main>
+</div>
+
+
 </body>
 </html>
