@@ -1,6 +1,9 @@
 /* IMPORT STYLE-DICTIONARY VARIABLES */
 @import url("variables.css");
 
+/* IMPORT ICONS */
+@import url("icons.css");
+
 *{
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
@@ -17,11 +20,26 @@ body{
 }
 
 /* Generic */
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    color: var(--specific-page-title);
+}
 h1{
     font-size: 36px;
-    color: var(--specific-page-title);
-    margin:0;
-    padding: 0;
+}
+h2{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    color: var(--specific-section-title);
+}
+h2 span[class*="icon-"], h2 span[class*=" icon-"]{
+    font-size: 32px;
+    color: var(--specific-section-icon);
 }
 
 /* Input */
@@ -43,8 +61,9 @@ h1{
 .input-wrapper .icon{
     padding:16px 0;
 }
-.input-wrapper .icon svg path{
-    fill: var(--specific-input-icon);
+.input-wrapper .icon span[class*="icon-"], .input-wrapper .icon span[class*=" icon-"]{
+    color: var(--specific-input-icon);
+    font-size: 24px;
 }
 
 .input-wrapper input{
@@ -55,6 +74,7 @@ h1{
     font-size: 16px;
     color: var(--specific-input-value);
     outline: 0;
+    width: 100%;
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -81,11 +101,12 @@ input:-moz-placeholder { /* Firefox 18- */
     padding: 8px;
     text-decoration: none;
 }
-.icon-button svg path{
-    fill: var(--specific-icon-button-default-color);
+.icon-button span[class*="icon-"], .icon-button span[class*=" icon-"]{
+    color: var(--specific-icon-button-default-color);
+    font-size: 24px;
 }
-.icon-button:hover svg path{
-    fill: var(--specific-icon-button-hover-color);
+.icon-button:hover span[class*="icon-"], .icon-button:hover span[class*=" icon-"]{
+    color: var(--specific-icon-button-hover-color);
 }
 
 .icon-button .dot{
@@ -206,8 +227,9 @@ nav.menu ul li a{
     border:1px solid var(--specific-menu-option-default-border);
 }
 
-nav.menu ul li a svg path{
-    fill: var(--specific-menu-option-default-foreground);
+nav.menu ul li a span[class^="icon-"], nav.menu ul li a span[class*=" icon-"] {
+    font-size: 24px;
+    color: var(--specific-menu-option-default-foreground);
 }
 
 nav.menu ul li a:hover{
@@ -215,8 +237,8 @@ nav.menu ul li a:hover{
     background-color: var(--specific-menu-option-hover-background);
     border:1px solid var(--specific-menu-option-hover-border);
 }
-nav.menu ul li a:hover svg path{
-    fill: var(--specific-menu-option-hover-foreground);
+nav.menu ul li a:hover span[class^="icon-"], nav.menu ul li a:hover span[class^=" icon-"] {
+    color: var(--specific-menu-option-hover-foreground);
 }
 
 nav.menu ul li a.selected{
@@ -225,8 +247,8 @@ nav.menu ul li a.selected{
     border:1px solid var(--specific-menu-option-selected-border);
     cursor: default;
 }
-nav.menu ul li a.selected svg path{
-    fill: var(--specific-menu-option-selected-foreground);
+nav.menu ul li a.selected span[class^="icon-"], nav.menu ul li a.selected span[class^=" icon-"]{
+    color: var(--specific-menu-option-selected-foreground);
 }
 
 
@@ -276,15 +298,36 @@ nav.menu ul li a.selected svg path{
 
 .content{
     max-width: calc( 100% - 378px);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
+/* Tasks Section */
+.tasks{
+    padding:0 32px 40px 32px;
+    width: 100%;
+}
 
+/* Planing Section */
+.planning{
+    padding:0 32px 40px 32px;
+    width: 50%;
+}
 
+/* Music Section */
+.music{
+    padding:0 32px 40px 32px;
+    width: 50%;
+}
 
+/* Chat Section */
 .chat{
     width: 378px;
-    padding: 24px;
+    padding:40px 32px 40px 32px;
     -webkit-border-top-left-radius: 48px;
     -moz-border-radius-topleft: 48px;
     border-top-left-radius: 48px;

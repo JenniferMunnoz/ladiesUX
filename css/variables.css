@@ -127,5 +127,6 @@
     --specific-dot-info: var(--semantic-info-base);
     --specific-dot-border: var(--palette-white);
 
-
+    --specific-section-icon: var(--semantic-primary-strong-1);
+    --specific-section-title: var(--semantic-content-emphasis-1);
   }
