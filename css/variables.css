@@ -129,4 +129,24 @@
 
     --specific-section-icon: var(--semantic-primary-strong-1);
     --specific-section-title: var(--semantic-content-emphasis-1);
+
+    --specific-ghost-button-default-icon: var(--semantic-primary-base);
+    --specific-ghost-button-default-foreground: var(--semantic-primary-base);
+    --specific-ghost-button-hover-icon: var(--semantic-primary-strong-2);
+    --specific-ghost-button-hover-foreground: var(--semantic-primary-strong-2);
+
+    --specific-arrow-button-default-icon: var(--semantic-primary-weak-1);
+    --specific-arrow-button-default-border: var(--semantic-primary-weak-1);
+    --specific-arrow-button-default-background: var(--semantic-content-lightest);
+    --specific-arrow-button-hover-icon: var(--semantic-primary-strong-2);
+    --specific-arrow-button-hover-border: var(--semantic-primary-strong-2);
+    --specific-arrow-button-hover-background: var(--semantic-content-lightest);
+
+    --specific-calendar-month: var(--semantic-content-emphasis-1);
+    --specific-calendar-weekdays: var(--semantic-content-emphasis-2);
+    --specific-calendar-daynumber-active: var(--semantic-content-emphasis-1);
+    --specific-calendar-daynumber-inactive: var(--semantic-content-emphasis-4);
+    --specific-calendar-today-border: var(--semantic-primary-weak-1);
+    --specific-calendar-today-background: var(--semantic-primary-weakest);
+    --specific-calendar-today-foreground: var(--semantic-primary-strong-1);
   }

@@ -42,6 +42,12 @@ h2 span[class*="icon-"], h2 span[class*=" icon-"]{
     color: var(--specific-section-icon);
 }
 
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
 /* Input */
 .input-wrapper{
     margin-left: auto;
@@ -140,6 +146,28 @@ input:-moz-placeholder { /* Firefox 18- */
 .dot.info{
     background: var(--specific-dot-info);
 }
+
+/* Ghost button */
+.ghost-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:8px;
+    text-decoration: none;
+    color: var(--specific-ghost-button-default-foreground);
+}
+.ghost-button:hover{
+    color: var(--specific-ghost-button-hover-foreground);
+}
+.ghost-button span[class*="icon-"], .ghost-button span[class*=" icon-"]{
+    color: var(--specific-ghost-button-default-icon);
+    font-size: 24px;
+}
+.ghost-button:hover span[class*="icon-"], .ghost-button:hover span[class*=" icon-"]{
+    color: var(--specific-ghost-button-hover-icon);
+}
+
 
 .container{
     width: 1440px;
@@ -310,18 +338,187 @@ nav.menu ul li a.selected span[class^="icon-"], nav.menu ul li a.selected span[c
 .tasks{
     padding:0 32px 40px 32px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:24px;
 }
-
+ul.tasks-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap:24px;
+}
 /* Planing Section */
 .planning{
     padding:0 32px 40px 32px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:24px;
+}
+.calendar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:16px;
+}
+.calendar .month{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--specific-calendar-month);
+    font-size: 18px;
+}
+.calendar .month .month-navigation{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.calendar .month .month-navigation a{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--specific-arrow-button-default-icon);
+    border:1px solid var(--specific-arrow-button-default-border);
+    background-color: var(--specific-arrow-button-default-background);
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.calendar .month .month-navigation a:hover{
+    border:1px solid var(--specific-arrow-button-hover-border);
+    background-color: var(--specific-arrow-button-hover-background);
+}
+.calendar .month .month-navigation a span[class^="icon-"], .calendar .month .month-navigation a span[class^=" icon-"]{
+    color: var(--specific-arrow-button-default-icon);
+}
+.calendar .month .month-navigation a:hover span[class^="icon-"], .calendar .month .month-navigation a:hover span[class^=" icon-"]{
+    color: var(--specific-arrow-button-hover-icon);
+}
+
+.calendar .weekdays{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--specific-calendar-weekdays);
+    font-size: 12px;
+    text-align: center;
+}
+.calendar .weekdays span{
+    width: 40px;
+}
+.calendar .daynumbers{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    font-size: 16px;
+    text-align: center;
+}
+.calendar .daynumbers span{
+    width: 40px;
+    height: 40px;
+    color: var(--specific-calendar-daynumber-active);
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+.calendar .daynumbers span.inactive{
+    color: var(--specific-calendar-daynumber-inactive);
+}
+.calendar .daynumbers span.today{
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    border-radius: 50rem;
+    color: var(--specific-calendar-today-foreground);
+    border: 1px solid var(--specific-calendar-today-border);
+    background-color: var(--specific-calendar-today-background);
 }
 
 /* Music Section */
 .music{
     padding:0 32px 40px 32px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:24px;
+}
+.song-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4px;
+}
+.song-progress{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap:16px;
+}
+.song-progressbar-bg{
+    width: 100%;
+    flex: 1;
+    height: 4px;
+    background: gray;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    border-radius: 50rem;
+    overflow: hidden;
+    position: relative;
+}
+.song-progressbar-advance{
+    width: 45%;
+    flex: 1;
+    position: absolute;
+    height: 4px;
+    background: purple;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    border-radius: 50rem;
+}
+.song-controls{
+    width: 100%;
+    
+}
+.song-controls ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 /* Chat Section */
