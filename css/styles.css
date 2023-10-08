@@ -174,6 +174,34 @@ input:-moz-placeholder { /* Firefox 18- */
     color: var(--specific-ghost-button-hover-icon);
 }
 
+/* Play button */
+.play-button{
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    border-radius: 50rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--specific-play-button-default-foreground);
+    background-color: var(--specific-play-button-default-background);
+}
+.play-button span[class*="icon-"], .play-button span[class*=" icon-"]{
+    color: var(--specific-play-button-default-foreground);
+    font-size: 24px;
+}
+.play-button:hover{
+    color: var(--specific-play-button-hover-foreground);
+    background-color: var(--specific-play-button-hover-background);
+}
+.play-button:hover span[class*="icon-"], .play-button:hover span[class*=" icon-"]{
+    color: var(--specific-play-button-hover-foreground);
+    font-size: 24px;
+}
+
 
 .container{
     width: 1440px;
@@ -356,7 +384,7 @@ ul.tasks-list{
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    gap:24px;
+    gap:32px;
 }
 ul.tasks-list li{
     flex: 1;
@@ -581,6 +609,65 @@ ul.tasks-list li{
     flex-wrap: wrap;
     gap:24px;
 }
+.song-cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+    width: 100%;
+}
+.song-cover img{
+    display: block;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+}
+.song-cover .previous-song-wrap-1{
+    background-color: var(--specific-music-song-second-level);
+    width: 20px;
+    height: 148px;
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-radius-topleft: 24px;
+    -moz-border-radius-bottomleft: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+.song-cover .previous-song-wrap-2{
+    background-color: var(--specific-music-song-thrid-level);
+    width: 16px;
+    height: 108px;
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-radius-topleft: 24px;
+    -moz-border-radius-bottomleft: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+.song-cover .next-song-wrap-1{
+    background-color: var(--specific-music-song-second-level);
+    width: 20px;
+    height: 148px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -moz-border-radius-topright: 24px;
+    -moz-border-radius-bottomright: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+.song-cover .next-song-wrap-2{
+    background-color: var(--specific-music-song-thrid-level);
+    width: 16px;
+    height: 108px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -moz-border-radius-topright: 24px;
+    -moz-border-radius-bottomright: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
 .song-info{
     width: 100%;
     display: flex;
@@ -589,6 +676,16 @@ ul.tasks-list li{
     justify-content: center;
     flex-wrap: wrap;
     gap:4px;
+}
+.song-info .song-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--specific-music-song-name);
+}
+.song-info .song-singer{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--specific-music-song-singer);
 }
 .song-progress{
     width: 100%;
@@ -599,23 +696,33 @@ ul.tasks-list li{
     flex-wrap: nowrap;
     gap:16px;
 }
-.song-progressbar-bg{
+.song-progress .song-current-time{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--specific-music-progressbar-progress-time);
+}
+.song-progress .song-duration-time{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--specific-music-progressbar-progress-time);
+}
+.song-progress .song-progressbar-bg{
     width: 100%;
     flex: 1;
     height: 4px;
-    background: gray;
+    background: var(--specific-music-progressbar-background);
     -webkit-border-radius: 50rem;
     -moz-border-radius: 50rem;
     border-radius: 50rem;
     overflow: hidden;
     position: relative;
 }
-.song-progressbar-advance{
+.song-progress .song-progressbar-advance{
     width: 45%;
     flex: 1;
     position: absolute;
     height: 4px;
-    background: purple;
+    background: var(--specific-music-progressbar-foreground);
     -webkit-border-radius: 50rem;
     -moz-border-radius: 50rem;
     border-radius: 50rem;

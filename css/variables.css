@@ -214,4 +214,13 @@
     --specific-calendar-today-border: var(--semantic-primary-weak-1);
     --specific-calendar-today-background: var(--semantic-primary-weakest);
     --specific-calendar-today-foreground: var(--semantic-primary-strong-1);
+
+    --specific-music-song-second-level: var(--semantic-neutral-weak-2);
+    --specific-music-song-thrid-level: var(--semantic-neutral-weak-3);
+    --specific-music-song-name: var(--semantic-content-emphasis-1);
+    --specific-music-song-singer: var(--semantic-content-emphasis-3);
+    --specific-music-progressbar-background: var(--semantic-neutral-weak-2);
+    --specific-music-progressbar-foreground: var(--semantic-primary-base);
+    --specific-music-progressbar-progress-time: var(--semantic-content-emphasis-3);
+    --specific-music-progressbar-duration-time: var(--semantic-content-emphasis-3);
   }
