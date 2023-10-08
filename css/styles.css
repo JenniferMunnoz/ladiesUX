@@ -84,7 +84,7 @@ ul{
     padding: 0;
     background: transparent;
     font-size: 16px;
-    color: var(--specific-input-value);
+    color: var(--specific-input-valor);
     outline: 0;
     width: 100%;
 }
