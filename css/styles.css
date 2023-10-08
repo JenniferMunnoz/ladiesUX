@@ -15,7 +15,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #EFEFFE;
+    background-color: var(--specific-body-background);
     margin: 0;
 }
 
@@ -174,7 +174,6 @@ input:-moz-placeholder { /* Firefox 18- */
     max-width: 1440px;
     height: 923px;
     max-height: 923px;
-    background-color: #EFEFFE;
     overflow: hidden;
 
     display: flex;
@@ -285,7 +284,7 @@ nav.menu ul li a.selected span[class^="icon-"], nav.menu ul li a.selected span[c
     flex:1;
     height: 923px;
     max-height: 923px;
-    background-color: white;
+    background-color: var(--specific-main-section-background);
     -webkit-border-top-left-radius: 48px;
     -webkit-border-bottom-left-radius: 48px;
     -moz-border-radius-topleft: 48px;
@@ -428,6 +427,7 @@ ul.tasks-list{
     width: 40px;
 }
 .calendar .daynumbers{
+    
     width: 100%;
     display:flex;
     flex-direction:row;
@@ -438,7 +438,8 @@ ul.tasks-list{
     font-size: 16px;
     text-align: center;
 }
-.calendar .daynumbers span{
+.calendar .daynumbers > span{
+    position: relative;
     width: 40px;
     height: 40px;
     color: var(--specific-calendar-daynumber-active);
@@ -457,6 +458,21 @@ ul.tasks-list{
     color: var(--specific-calendar-today-foreground);
     border: 1px solid var(--specific-calendar-today-border);
     background-color: var(--specific-calendar-today-background);
+}
+.calendar .daynumbers > span .indicators{
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.calendar .daynumbers > span .indicators .dot{
+    width: 5px;
+    height: 5px;
+    border: none;
 }
 
 /* Music Section */

@@ -32,6 +32,18 @@
     --palette-neutral-900: #18181B;
     --palette-primary-950: #09090B;
 
+    --palette-success-50: #F4FCF1;
+    --palette-success-100: #E6F9DF;
+    --palette-success-200: #CEF1C1;
+    --palette-success-300: #A7E491;
+    --palette-success-400: #79CE5A;
+    --palette-success-500: #59BE36;
+    --palette-success-600: #419425;
+    --palette-success-700: #357520;
+    --palette-success-800: #2D5D1E;
+    --palette-success-900: #274C1B;
+    --palette-success-950: #102A09;
+
     --palette-danger-50: #FDF2F7;
     --palette-danger-100: #FBE8F2;
     --palette-danger-200: #FAD0E6;
@@ -44,17 +56,30 @@
     --palette-danger-900: #801B3E;
     --palette-danger-950: #4E0920;
 
+    --palette-warning-50: #FDF9ED;
+    --palette-warning-100: #F7EDCE;
+    --palette-warning-200: #EFDA98;
+    --palette-warning-300: #E6C05E;
+    --palette-warning-400: #E1AC3E;
+    --palette-warning-500: #D88F28;
+    --palette-warning-600: #BF6E20;
+    --palette-warning-700: #9F501E;
+    --palette-warning-800: #823F1E;
+    --palette-warning-900: #6B351C;
+    --palette-warning-950: #3D1A0B;
 
+    --palette-info-50: #F2F9FD;
+    --palette-info-100: #E3F0FB;
+    --palette-info-200: #C1E3F6;
+    --palette-info-300: #8BCCEE;
+    --palette-info-400: #60BAE6;
+    --palette-info-500: #2698D1;
+    --palette-info-600: #187AB1;
+    --palette-info-700: #146190;
+    --palette-info-800: #155377;
+    --palette-info-900: #174563;
+    --palette-info-950: #0F2D42;
 
-    --semantic-primary-weakest: var(--palette-primary-50);
-    --semantic-primary-weak-3: var(--palette-primary-100);
-    --semantic-primary-weak-2: var(--palette-primary-200);
-    --semantic-primary-weak-1: var(--palette-primary-300);
-    --semantic-primary-base: var(--palette-primary-400);
-    --semantic-primary-strong-1: var(--palette-primary-500);
-    --semantic-primary-strong-2: var(--palette-primary-600);
-    --semantic-primary-strong-3: var(--palette-primary-700);
-    --semantic-primary-strongest: var(--palette-primary-900);
 
     --semantic-neutral-weakest: var(--palette-neutral-50);
     --semantic-neutral-weak-3: var(--palette-neutral-100);
@@ -66,9 +91,27 @@
     --semantic-neutral-strong-3: var(--palette-neutral-700);
     --semantic-neutral-strongest: var(--palette-neutral-800);
 
+    --semantic-primary-weakest: var(--palette-primary-50);
+    --semantic-primary-weak-3: var(--palette-primary-100);
+    --semantic-primary-weak-2: var(--palette-primary-200);
+    --semantic-primary-weak-1: var(--palette-primary-300);
+    --semantic-primary-base: var(--palette-primary-400);
+    --semantic-primary-strong-1: var(--palette-primary-500);
+    --semantic-primary-strong-2: var(--palette-primary-600);
+    --semantic-primary-strong-3: var(--palette-primary-700);
+    --semantic-primary-strongest: var(--palette-primary-900);
+
+    --semantic-success-weakest: var(--palette-success-100);
+    --semantic-success-base: var(--palette-success-500);
+
     --semantic-danger-weakest: var(--palette-danger-50);
     --semantic-danger-base: var(--palette-danger-700);
 
+    --semantic-warning-weakest: var(--palette-warning-50);
+    --semantic-warning-base: var(--palette-warning-300);
+
+    --semantic-info-weakest: var(--palette-info-50);
+    --semantic-info-base: var(--palette-info-400);
 
     --semantic-surface-neutral-0: var(--palette-white);
     --semantic-surface-neutral-1: var(--palette-neutral-50);
@@ -95,7 +138,14 @@
     --specific-logo-name: var(--semantic-neutral-strongest);
     --specific-logo-slogan: var(--semantic-neutral-strong-3);
 
+    --specific-body-background: var(--semantic-surface-primary-0);
+
+    --specific-main-section-background: var(--semantic-surface-neutral-0);
+
     --specific-page-title: var(--semantic-content-emphasis-1);
+
+    --specific-section-icon: var(--semantic-primary-strong-1);
+    --specific-section-title: var(--semantic-content-emphasis-1);
 
 
     --specific-menu-option-default-background: transparent;
@@ -110,15 +160,27 @@
     --specific-menu-option-hover-border: var(--semantic-primary-strong-1);
     --specific-menu-option-hover-foreground: var(--semantic-primary-strong-1);
 
-    --specific-input-background: var(--semantic-neutral-weak-3);
-    --specific-input-placeholder: var(--semantic-neutral-strong-1);
-    --specific-input-value: var(--semantic-neutral-strong-2);
-    --specific-input-icon: var(--semantic-neutral-strong-2);
+    --specific-ghost-button-default-icon: var(--semantic-primary-base);
+    --specific-ghost-button-default-foreground: var(--semantic-primary-base);
 
+    --specific-ghost-button-hover-icon: var(--semantic-primary-strong-2);
+    --specific-ghost-button-hover-foreground: var(--semantic-primary-strong-2);
 
     --specific-icon-button-default-color: var(--semantic-neutral-strong-2);
     --specific-icon-button-hover-color: var(--semantic-primary-strong-2);
 
+    --specific-arrow-button-default-icon: var(--semantic-primary-weak-1);
+    --specific-arrow-button-default-border: var(--semantic-primary-weak-1);
+    --specific-arrow-button-default-background: var(--semantic-content-lightest);
+    --specific-arrow-button-hover-icon: var(--semantic-primary-strong-2);
+    --specific-arrow-button-hover-border: var(--semantic-primary-strong-2);
+    --specific-arrow-button-hover-background: var(--semantic-content-lightest);
+
+    --specific-play-button-default-background: var(--semantic-primary-base);
+    --specific-play-button-default-foreground: var(--semantic-content-lightest);
+
+    --specific-play-button-hover-background: var(--semantic-primary-strong-2);
+    --specific-play-button-hover-foreground: var(--semantic-content-lightest);
 
     --specific-dot-primary: var(--semantic-primary-base);
     --specific-dot-danger: var(--semantic-danger-base);
@@ -127,20 +189,23 @@
     --specific-dot-info: var(--semantic-info-base);
     --specific-dot-border: var(--palette-white);
 
-    --specific-section-icon: var(--semantic-primary-strong-1);
-    --specific-section-title: var(--semantic-content-emphasis-1);
+    --specific-input-background: var(--semantic-neutral-weak-3);
+    --specific-input-placeholder: var(--semantic-neutral-strong-1);
+    --specific-input-value: var(--semantic-neutral-strong-2);
+    --specific-input-icon: var(--semantic-neutral-strong-2);
 
-    --specific-ghost-button-default-icon: var(--semantic-primary-base);
-    --specific-ghost-button-default-foreground: var(--semantic-primary-base);
-    --specific-ghost-button-hover-icon: var(--semantic-primary-strong-2);
-    --specific-ghost-button-hover-foreground: var(--semantic-primary-strong-2);
-
-    --specific-arrow-button-default-icon: var(--semantic-primary-weak-1);
-    --specific-arrow-button-default-border: var(--semantic-primary-weak-1);
-    --specific-arrow-button-default-background: var(--semantic-content-lightest);
-    --specific-arrow-button-hover-icon: var(--semantic-primary-strong-2);
-    --specific-arrow-button-hover-border: var(--semantic-primary-strong-2);
-    --specific-arrow-button-hover-background: var(--semantic-content-lightest);
+    --specific-task-folder-project-label: var(--semantic-primary-strong-1);
+    --specific-task-folder-task-title: var(--semantic-content-emphasis-1);
+    --specific-task-folder-project-name: var(--semantic-neutral-strong-1);
+    --specific-task-folder-picture-border: var(--semantic-primary-base);
+    --specific-task-folder-text-danger: var(--semantic-danger-base);
+    --specific-task-folder-text-success: var(--semantic-success-base);
+    --specific-task-folder-text-warning: var(--semantic-warning-base);
+    --specific-task-folder-text-info: var(--semantic-info-base);
+    --specific-task-folder-featured-flap-color: var(--semantic-primary-weak-2);
+    --specific-task-folder-featured-main-color: var(--semantic-primary-weakest);
+    --specific-task-folder-default-flap-color: var(--semantic-neutral-weak-2);
+    --specific-task-folder-default-main-color: var(--semantic-neutral-weakest);
 
     --specific-calendar-month: var(--semantic-content-emphasis-1);
     --specific-calendar-weekdays: var(--semantic-content-emphasis-2);
