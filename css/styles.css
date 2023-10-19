@@ -16,7 +16,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--ladies-taskify-specific-body-background);
+    background-color: var(--specific-body-background);
     margin: 0;
 }
 
@@ -24,7 +24,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     margin:0;
     padding:0;
-    color: var(--ladies-taskify-specific-page-title);
+    color: var(--specific-page-title);
     font-weight: 400;
 }
 h1{
@@ -37,11 +37,11 @@ h2{
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
-    color: var(--ladies-taskify-specific-section-title);
+    color: var(--specific-section-title);
 }
 h2 span[class*="icon-"], h2 span[class*=" icon-"]{
     font-size: 32px;
-    color: var(--ladies-taskify-specific-section-icon);
+    color: var(--specific-section-icon);
 }
 h3{
     font-size: 18px;
@@ -60,7 +60,7 @@ ul{
     -webkit-border-radius: 50rem;
     -moz-border-radius: 50rem;
     border-radius: 50rem;
-    background: var(--ladies-taskify-specific-input-background);
+    background: var(--specific-input-background);
 
     display: flex;
     flex-direction: row;
@@ -74,7 +74,7 @@ ul{
     padding:16px 0;
 }
 .input-wrapper .icon span[class*="icon-"], .input-wrapper .icon span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-input-icon);
+    color: var(--specific-input-icon);
     font-size: 24px;
 }
 
@@ -84,25 +84,25 @@ ul{
     padding: 0;
     background: transparent;
     font-size: 16px;
-    color: var(--ladies-taskify-specific-input-valor);
+    color: var(--specific-input-valor);
     outline: 0;
     width: 100%;
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: var(--ladies-taskify-specific-input-placeholder);
+    color: var(--specific-input-placeholder);
     opacity: 1;
 }
 input::-moz-placeholder { /* Firefox 19+ */
-    color: var(--ladies-taskify-specific-input-placeholder);
+    color: var(--specific-input-placeholder);
     opacity: 1;
 }
 input:-ms-input-placeholder { /* IE 10+ */
-    color: var(--ladies-taskify-specific-input-placeholder);
+    color: var(--specific-input-placeholder);
     opacity: 1;
 }
 input:-moz-placeholder { /* Firefox 18- */
-    color: var(--ladies-taskify-specific-input-placeholder);
+    color: var(--specific-input-placeholder);
     opacity: 1;
 }
 
@@ -114,11 +114,11 @@ input:-moz-placeholder { /* Firefox 18- */
     text-decoration: none;
 }
 .icon-button span[class*="icon-"], .icon-button span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-icon-button-default-color);
+    color: var(--specific-icon-button-default-color);
     font-size: 24px;
 }
 .icon-button:hover span[class*="icon-"], .icon-button:hover span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-icon-button-hover-color);
+    color: var(--specific-icon-button-hover-color);
 }
 
 .icon-button .dot{
@@ -132,8 +132,8 @@ input:-moz-placeholder { /* Firefox 18- */
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: var(--ladies-taskify-specific-dot-primary);
-    border: 2px solid var(--ladies-taskify-specific-dot-border);
+    background: var(--specific-dot-primary);
+    border: 2px solid var(--specific-dot-border);
     color: transparent;
     font-size: 0;
     -webkit-border-radius: 50rem;
@@ -141,16 +141,16 @@ input:-moz-placeholder { /* Firefox 18- */
     border-radius: 50rem;
 }
 .dot.danger{
-    background: var(--ladies-taskify-specific-dot-danger);
+    background: var(--specific-dot-danger);
 }
 .dot.success{
-    background: var(--ladies-taskify-specific-dot-success);
+    background: var(--specific-dot-success);
 }
 .dot.warning{
-    background: var(--ladies-taskify-specific-dot-warning);
+    background: var(--specific-dot-warning);
 }
 .dot.info{
-    background: var(--ladies-taskify-specific-dot-info);
+    background: var(--specific-dot-info);
 }
 
 /* Ghost button */
@@ -161,17 +161,17 @@ input:-moz-placeholder { /* Firefox 18- */
     align-items: center;
     gap:8px;
     text-decoration: none;
-    color: var(--ladies-taskify-specific-ghost-button-default-foreground);
+    color: var(--specific-ghost-button-default-foreground);
 }
 .ghost-button:hover{
-    color: var(--ladies-taskify-specific-ghost-button-hover-foreground);
+    color: var(--specific-ghost-button-hover-foreground);
 }
 .ghost-button span[class*="icon-"], .ghost-button span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-ghost-button-default-icon);
+    color: var(--specific-ghost-button-default-icon);
     font-size: 24px;
 }
 .ghost-button:hover span[class*="icon-"], .ghost-button:hover span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-ghost-button-hover-icon);
+    color: var(--specific-ghost-button-hover-icon);
 }
 
 /* Play button */
@@ -186,19 +186,19 @@ input:-moz-placeholder { /* Firefox 18- */
     justify-content: center;
     text-decoration: none;
     padding: 8px;
-    color: var(--ladies-taskify-specific-play-button-default-foreground);
-    background-color: var(--ladies-taskify-specific-play-button-default-background);
+    color: var(--specific-play-button-default-foreground);
+    background-color: var(--specific-play-button-default-background);
 }
 .play-button span[class*="icon-"], .play-button span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-play-button-default-foreground);
+    color: var(--specific-play-button-default-foreground);
     font-size: 24px;
 }
 .play-button:hover{
-    color: var(--ladies-taskify-specific-play-button-hover-foreground);
-    background-color: var(--ladies-taskify-specific-play-button-hover-background);
+    color: var(--specific-play-button-hover-foreground);
+    background-color: var(--specific-play-button-hover-background);
 }
 .play-button:hover span[class*="icon-"], .play-button:hover span[class*=" icon-"]{
-    color: var(--ladies-taskify-specific-play-button-hover-foreground);
+    color: var(--specific-play-button-hover-foreground);
     font-size: 24px;
 }
 
@@ -237,19 +237,19 @@ input:-moz-placeholder { /* Firefox 18- */
     
 }
 
-.svg-logo path.crown {fill: var(--ladies-taskify-specific-logo-crown) !important;}
-.svg-logo path.stroke {fill: var(--ladies-taskify-specific-logo-stroke) !important;}
-.svg-logo path.skin {fill: var(--ladies-taskify-specific-logo-skin) !important;}
-.svg-logo path.hair {fill: var(--ladies-taskify-specific-logo-hair) !important;}
+.svg-logo path.crown {fill: var(--specific-logo-crown) !important;}
+.svg-logo path.stroke {fill: var(--specific-logo-stroke) !important;}
+.svg-logo path.skin {fill: var(--specific-logo-skin) !important;}
+.svg-logo path.hair {fill: var(--specific-logo-hair) !important;}
 
 .logo-name{
     font-size:24px;
-    color: var(--ladies-taskify-specific-logo-name);
+    color: var(--specific-logo-name);
     text-align: center;
 }
 .logo-slogan{
     font-size:14px;
-    color: var(--ladies-taskify-specific-logo-slogan);
+    color: var(--specific-logo-slogan);
     text-align: center;
 }
 
@@ -283,33 +283,33 @@ nav.menu ul li a{
     border-radius: 8px;
     text-decoration: none;
 
-    color: var(--ladies-taskify-specific-menu-option-default-foreground);
-    background-color: var(--ladies-taskify-specific-menu-option-default-background);
-    border:1px solid var(--ladies-taskify-specific-menu-option-default-border);
+    color: var(--specific-menu-option-default-foreground);
+    background-color: var(--specific-menu-option-default-background);
+    border:1px solid var(--specific-menu-option-default-border);
 }
 
 nav.menu ul li a span[class^="icon-"], nav.menu ul li a span[class*=" icon-"] {
     font-size: 24px;
-    color: var(--ladies-taskify-specific-menu-option-default-foreground);
+    color: var(--specific-menu-option-default-foreground);
 }
 
 nav.menu ul li a:hover{
-    color: var(--ladies-taskify-specific-menu-option-hover-foreground);
-    background-color: var(--ladies-taskify-specific-menu-option-hover-background);
-    border:1px solid var(--ladies-taskify-specific-menu-option-hover-border);
+    color: var(--specific-menu-option-hover-foreground);
+    background-color: var(--specific-menu-option-hover-background);
+    border:1px solid var(--specific-menu-option-hover-border);
 }
 nav.menu ul li a:hover span[class^="icon-"], nav.menu ul li a:hover span[class^=" icon-"] {
-    color: var(--ladies-taskify-specific-menu-option-hover-foreground);
+    color: var(--specific-menu-option-hover-foreground);
 }
 
 nav.menu ul li a.selected{
-    color: var(--ladies-taskify-specific-menu-option-selected-foreground);
-    background-color: var(--ladies-taskify-specific-menu-option-selected-background);
-    border:1px solid var(--ladies-taskify-specific-menu-option-selected-border);
+    color: var(--specific-menu-option-selected-foreground);
+    background-color: var(--specific-menu-option-selected-background);
+    border:1px solid var(--specific-menu-option-selected-border);
     cursor: default;
 }
 nav.menu ul li a.selected span[class^="icon-"], nav.menu ul li a.selected span[class^=" icon-"]{
-    color: var(--ladies-taskify-specific-menu-option-selected-foreground);
+    color: var(--specific-menu-option-selected-foreground);
 }
 
 
@@ -318,7 +318,7 @@ nav.menu ul li a.selected span[class^="icon-"], nav.menu ul li a.selected span[c
     flex:1;
     height: 923px;
     max-height: 923px;
-    background-color: var(--ladies-taskify-specific-main-section-background);
+    background-color: var(--specific-main-section-background);
     -webkit-border-top-left-radius: 48px;
     -webkit-border-bottom-left-radius: 48px;
     -moz-border-radius-topleft: 48px;
@@ -403,10 +403,10 @@ ul.tasks-list li{
     bottom: 0;
 }
 .task-folder a .flap svg path{
-    fill: var(--ladies-taskify-specific-task-folder-default-flap-color);
+    fill: var(--specific-task-folder-default-flap-color);
 }
 .task-folder.featured a .flap svg path{
-    fill: var(--ladies-taskify-specific-task-folder-featured-flap-color);
+    fill: var(--specific-task-folder-featured-flap-color);
 }
 .task-folder a .main{
     position: relative;
@@ -420,24 +420,24 @@ ul.tasks-list li{
     padding: 24px 16px 16px 16px;
     margin-top:24px;
 
-    background: var(--ladies-taskify-specific-task-folder-default-main-color);
+    background: var(--specific-task-folder-default-main-color);
 }
 .task-folder.featured a .main{
-    background: var(--ladies-taskify-specific-task-folder-featured-main-color);
+    background: var(--specific-task-folder-featured-main-color);
 }
 .task-folder a .main .task{
     padding-bottom:16px;
 }
 .task-folder a .main .task .days-left{
     font-size: 12px;
-    color: var(--ladies-taskify-specific-task-folder-text-success);
+    color: var(--specific-task-folder-text-success);
 }
 .task-folder a .main .task .days-left.danger{
     font-size: 12px;
-    color: var(--ladies-taskify-specific-task-folder-text-danger);
+    color: var(--specific-task-folder-text-danger);
 }
 .task-folder a .main .task h3{
-    color: var(--ladies-taskify-specific-task-folder-task-title);
+    color: var(--specific-task-folder-task-title);
 }
 
 .task-folder a .main .project{
@@ -457,12 +457,12 @@ ul.tasks-list li{
 }
 .task-folder a .main .project .project-info .label{
     font-size: 12px;
-    color: var(--ladies-taskify-specific-task-folder-project-label);
+    color: var(--specific-task-folder-project-label);
     text-transform: uppercase;
 }
 .task-folder a .main .project .project-info .name{
     font-size: 14px;
-    color: var(--ladies-taskify-specific-task-folder-project-name);
+    color: var(--specific-task-folder-project-name);
 }
 .task-folder a .main .project .project-picture{
     -webkit-border-radius: 50rem;
@@ -473,7 +473,7 @@ ul.tasks-list li{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border:2px solid var(--ladies-taskify-specific-task-folder-picture-border);
+    border:2px solid var(--specific-task-folder-picture-border);
 }
 /* Planing Section */
 .planning{
@@ -501,7 +501,7 @@ ul.tasks-list li{
     align-items: center;
     justify-content: space-between;
 
-    color: var(--ladies-taskify-specific-calendar-month);
+    color: var(--specific-calendar-month);
     font-size: 18px;
 }
 .calendar .month .month-navigation{
@@ -517,23 +517,23 @@ ul.tasks-list li{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: var(--ladies-taskify-specific-arrow-button-default-icon);
-    border:1px solid var(--ladies-taskify-specific-arrow-button-default-border);
-    background-color: var(--ladies-taskify-specific-arrow-button-default-background);
+    color: var(--specific-arrow-button-default-icon);
+    border:1px solid var(--specific-arrow-button-default-border);
+    background-color: var(--specific-arrow-button-default-background);
 
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
 }
 .calendar .month .month-navigation a:hover{
-    border:1px solid var(--ladies-taskify-specific-arrow-button-hover-border);
-    background-color: var(--ladies-taskify-specific-arrow-button-hover-background);
+    border:1px solid var(--specific-arrow-button-hover-border);
+    background-color: var(--specific-arrow-button-hover-background);
 }
 .calendar .month .month-navigation a span[class^="icon-"], .calendar .month .month-navigation a span[class^=" icon-"]{
-    color: var(--ladies-taskify-specific-arrow-button-default-icon);
+    color: var(--specific-arrow-button-default-icon);
 }
 .calendar .month .month-navigation a:hover span[class^="icon-"], .calendar .month .month-navigation a:hover span[class^=" icon-"]{
-    color: var(--ladies-taskify-specific-arrow-button-hover-icon);
+    color: var(--specific-arrow-button-hover-icon);
 }
 
 .calendar .weekdays{
@@ -542,7 +542,7 @@ ul.tasks-list li{
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
-    color: var(--ladies-taskify-specific-calendar-weekdays);
+    color: var(--specific-calendar-weekdays);
     font-size: 12px;
     text-align: center;
 }
@@ -565,22 +565,22 @@ ul.tasks-list li{
     position: relative;
     width: 40px;
     height: 40px;
-    color: var(--ladies-taskify-specific-calendar-daynumber-active);
+    color: var(--specific-calendar-daynumber-active);
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content: center;
 }
 .calendar .daynumbers span.inactive{
-    color: var(--ladies-taskify-specific-calendar-daynumber-inactive);
+    color: var(--specific-calendar-daynumber-inactive);
 }
 .calendar .daynumbers span.today{
     -webkit-border-radius: 50rem;
     -moz-border-radius: 50rem;
     border-radius: 50rem;
-    color: var(--ladies-taskify-specific-calendar-today-foreground);
-    border: 1px solid var(--ladies-taskify-specific-calendar-today-border);
-    background-color: var(--ladies-taskify-specific-calendar-today-background);
+    color: var(--specific-calendar-today-foreground);
+    border: 1px solid var(--specific-calendar-today-border);
+    background-color: var(--specific-calendar-today-background);
 }
 .calendar .daynumbers > span .indicators{
     width: 40px;
@@ -624,7 +624,7 @@ ul.tasks-list li{
     border-radius: 24px;
 }
 .song-cover .previous-song-wrap-1{
-    background-color: var(--ladies-taskify-specific-music-song-second-level);
+    background-color: var(--specific-music-song-second-level);
     width: 20px;
     height: 148px;
     -webkit-border-top-left-radius: 24px;
@@ -635,7 +635,7 @@ ul.tasks-list li{
     border-bottom-left-radius: 24px;
 }
 .song-cover .previous-song-wrap-2{
-    background-color: var(--ladies-taskify-specific-music-song-thrid-level);
+    background-color: var(--specific-music-song-thrid-level);
     width: 16px;
     height: 108px;
     -webkit-border-top-left-radius: 24px;
@@ -646,7 +646,7 @@ ul.tasks-list li{
     border-bottom-left-radius: 24px;
 }
 .song-cover .next-song-wrap-1{
-    background-color: var(--ladies-taskify-specific-music-song-second-level);
+    background-color: var(--specific-music-song-second-level);
     width: 20px;
     height: 148px;
     -webkit-border-top-right-radius: 24px;
@@ -657,7 +657,7 @@ ul.tasks-list li{
     border-bottom-right-radius: 24px;
 }
 .song-cover .next-song-wrap-2{
-    background-color: var(--ladies-taskify-specific-music-song-thrid-level);
+    background-color: var(--specific-music-song-thrid-level);
     width: 16px;
     height: 108px;
     -webkit-border-top-right-radius: 24px;
@@ -680,12 +680,12 @@ ul.tasks-list li{
 .song-info .song-name{
     font-size: 18px;
     font-weight: 500;
-    color: var(--ladies-taskify-specific-music-song-name);
+    color: var(--specific-music-song-name);
 }
 .song-info .song-singer{
     font-size: 14px;
     font-weight: 400;
-    color: var(--ladies-taskify-specific-music-song-singer);
+    color: var(--specific-music-song-singer);
 }
 .song-progress{
     width: 100%;
@@ -699,18 +699,18 @@ ul.tasks-list li{
 .song-progress .song-current-time{
     font-size: 12px;
     font-weight: 400;
-    color: var(--ladies-taskify-specific-music-progressbar-progress-time);
+    color: var(--specific-music-progressbar-progress-time);
 }
 .song-progress .song-duration-time{
     font-size: 12px;
     font-weight: 400;
-    color: var(--ladies-taskify-specific-music-progressbar-progress-time);
+    color: var(--specific-music-progressbar-progress-time);
 }
 .song-progress .song-progressbar-bg{
     width: 100%;
     flex: 1;
     height: 4px;
-    background: var(--ladies-taskify-specific-music-progressbar-background);
+    background: var(--specific-music-progressbar-background);
     -webkit-border-radius: 50rem;
     -moz-border-radius: 50rem;
     border-radius: 50rem;
@@ -722,7 +722,7 @@ ul.tasks-list li{
     flex: 1;
     position: absolute;
     height: 4px;
-    background: var(--ladies-taskify-specific-music-progressbar-foreground);
+    background: var(--specific-music-progressbar-foreground);
     -webkit-border-radius: 50rem;
     -moz-border-radius: 50rem;
     border-radius: 50rem;
@@ -749,7 +749,7 @@ ul.tasks-list li{
     -webkit-border-top-left-radius: 48px;
     -moz-border-radius-topleft: 48px;
     border-top-left-radius: 48px;
-    background-color: var(--ladies-taskify-specific-chat-section-background);
+    background-color: var(--specific-chat-section-background);
 
     flex: 1;
     height: calc(100% - 124px);
@@ -758,7 +758,7 @@ ul.tasks-list li{
     padding:0 32px;
 }
 .chat-channel{
-    background-color: var(--ladies-taskify-specific-chat-channel-background);
+    background-color: var(--specific-chat-channel-background);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -795,12 +795,12 @@ ul.tasks-list li{
 }
 .chat-channel .project .project-info .name{
     font-size: 12px;
-    color: var(--ladies-taskify-specific-task-folder-project-label);
+    color: var(--specific-task-folder-project-label);
     text-transform: uppercase;
 }
 .chat-channel .project .project-info .members{
     font-size: 14px;
-    color: var(--ladies-taskify-specific-task-folder-project-name);
+    color: var(--specific-task-folder-project-name);
 }
 .chat-messages{
     display: flex;
@@ -833,15 +833,15 @@ ul.tasks-list li{
 }
 .chat-messages .bubble-name{
     font-size: 12px;
-    color: var(--ladies-taskify-specific-chat-bubble-name);
+    color: var(--specific-chat-bubble-name);
 }
 .chat-messages .bubble-text{
     font-size: 14px;
-    color: var(--ladies-taskify-specific-chat-bubble-text);
+    color: var(--specific-chat-bubble-text);
 }
 .chat-messages .time{
     font-size: 10px;
-    color: var(--ladies-taskify-specific-chat-bubble-time);
+    color: var(--specific-chat-bubble-time);
     padding-top: 4px;
     padding-left: 24px;
 }
@@ -856,7 +856,7 @@ ul.tasks-list li{
 .chat-messages .audio-duration-time{
     font-size: 12px;
     font-weight: 400;
-    color: var(--ladies-taskify-specific-chat-bubble-audiobar-duration-time);
+    color: var(--specific-chat-bubble-audiobar-duration-time);
 }
 .chat-messages .audio-bars{
     flex:1;
@@ -869,10 +869,10 @@ ul.tasks-list li{
 .chat-messages .audio-bars > span{
     width: 3px;
     height: 100%;
-    background-color: var(--ladies-taskify-specific-chat-bubble-audiobar-background);
+    background-color: var(--specific-chat-bubble-audiobar-background);
 }
 .chat-messages .audio-bars > span.selected{
-    background-color: var(--ladies-taskify-specific-chat-bubble-audiobar-foreground);
+    background-color: var(--specific-chat-bubble-audiobar-foreground);
 }
 
 .chat-messages .audio-bars > span.rectangle-4{
@@ -920,13 +920,13 @@ ul.tasks-list li{
     -moz-border-radius-topright: 0;
     border-radius: 24px;
     border-top-right-radius: 0;
-    background-color: var(--ladies-taskify-specific-chat-bubble-background-me);
+    background-color: var(--specific-chat-bubble-background-me);
 }
 .chat-messages .entry-message.charlotte .bubble{
-    background-color: var(--ladies-taskify-specific-chat-bubble-background-1);
+    background-color: var(--specific-chat-bubble-background-1);
 }
 .chat-messages .entry-message.alexandra .bubble{
-    background-color: var(--ladies-taskify-specific-chat-bubble-background-2);
+    background-color: var(--specific-chat-bubble-background-2);
 }
 .chat-messages .entry-message .time{
     text-align: right;
